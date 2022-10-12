@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Validation - Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        .error{
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div class = "container">
+    <div class = "col-md-6 col-md-offset-3">
+        <div class = "panel panel-primary">
+            <div class = "panel-heading">
+                Registration
+            </div>
+            <div class = "panel-body">
+                <form id = "registration">
+                    <label for="nim" >NIM: </label>
+                    <input type="text" class="form-control" name="nim" id="nim" placeholder="NIM" maxtlengh="10" size="15"/>
+                    <br/>
+
+                    <label for="nama" class="labelfrm">NAMA: </label>
+                    <input type="text" class="form-control" name="nama" id="nama" size="30"/>
+                    <br/>
+
+                    <label for="alamat" class="labelfrm">ALAMAT: </label>
+                    <textarea name="alamat" class="form-control" id="alamat" cols="40" rows="4"></textarea>
+                    <br/>
+                    <label for="tgl" class="labelfrm">TANGGAL LAHIR: </label>
+                    <input type="text" class="form-control" name="tgl" id="tgl" maxlength="10" size="15"/>
+                    <br/>
+                    <label for="umur" class="labelfrm">UMUR: </label>
+                    <input type="text" class="form-control" name="umur" id="umur" maxlength="3" size="7"/>
+                    <br/>
+                    <label for="email" class="labelfrm">ALAMAT EMAIL: </label>
+                    <input type="text" class="form-control" name="email" id="email" size="50"/>
+                    <br/>
+                    <label for="situs" class="labelfrm">ALAMAT SITUS: </label>
+                    <input type="text" class="form-control" name="situs" id="situs" size="50"/>
+                    <br/>
+                    <label for="password" class="labelfrm">PASSWORD: </label>
+                    <input type = "password" class = "form-control" name = "password" placeholder = "Password" id = "password"/>
+                    <br/>
+                    <label for="confirm" class="labelfrm">ULANGI PASSWORD: </label>
+                    <input type = "password" class = "form-control" name = "confirm" placeholder = "Confirm Password" id ="confirm"/>
+                    <br/>
+                    <button type = "submit" class = "btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="validation.js"></script>
+</body>
+</html>
